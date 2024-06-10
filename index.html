@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>BOOKING LAPANGAN FUTSAL</header>
+      <form class="form" action="#">
+        <div class="input-box">
+          <label for="nama">Nama Lengkap</label>
+          <input
+            required=""
+            placeholder="Masukkan Nama Lengkap"
+            type="text"
+            id="nama"
+          />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label for="nomor">Nomor HP</label>
+            <input
+              required=""
+              placeholder="Masukkan Nomor HP"
+              type="tel"
+              id="nomor"
+            />
+          </div>
+          <div class="input-box">
+            <label for="tanggal">Tanggal Booking</label>
+            <input
+              required=""
+              placeholder="Masukkan Tanggal Booking"
+              type="date"
+              id="tanggal"
+            />
+          </div>
+        </div>
+        <div class="lapangan-box">
+          <label for="jenis-lapangan">Jenis Lapangan</label>
+          <div class="lapangan-option">
+            <div class="lapangan">
+              <input checked="" name="lapangan" id="vinyl" type="radio" />
+              <label for="vinyl">Vinyl</label>
+            </div>
+            <div class="lapangan">
+              <input name="lapangan" id="sintetis" type="radio" />
+              <label for="sintetis">Sintetis</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box waktu">
+          <label for="waktu">Waktu</label>
+          <div class="column">
+            <div class="select-box">
+              <select id="dari">
+                <option hidden="">Dari Jam</option>
+                <option>13.00</option>
+                <option>14.00</option>
+                <option>15.00</option>
+                <option>16.00</option>
+                <option>17.00</option>
+                <option>18.00</option>
+                <option>19.00</option>
+                <option>20.00</option>
+                <option>21.00</option>
+                <option>22.00</option>
+                <option>23.00</option>
+              </select>
+            </div>
+            <div class="select-box">
+              <select id="sampai">
+                <option hidden="">Sampai Jam</option>
+                <option>14.00</option>
+                <option>15.00</option>
+                <option>16.00</option>
+                <option>17.00</option>
+                <option>18.00</option>
+                <option>19.00</option>
+                <option>20.00</option>
+                <option>21.00</option>
+                <option>22.00</option>
+                <option>23.00</option>
+                <option>24.00</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label for="informasi">Informasi Tambahan</label>
+          <input required="" placeholder="" type="text" id="informasi" />
+        </div>
+        <button type="submit" onclick="kirimData()">Booking</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
